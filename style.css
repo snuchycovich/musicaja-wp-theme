@@ -1,0 +1,291 @@
+/*
+Theme Name: Musica Jarocha
+Theme URI: 
+Description: Musica Jarocha theme created by Emiliano Castillo.
+Version: 2
+Author: Emiliano Castillo
+ 
+Creation Theme by Emiliano Castillo || http://www.emilianocastillo.com
+ 
+*/
+@import url(reset.css);
+/*-------------------------------------------------------------------------------------------*/
+/*- FONTS -----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('fonts/alexbrush-regular-otf-webfont.eot');
+    src: url('fonts/alexbrush-regular-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/alexbrush-regular-otf-webfont.woff') format('woff'),
+         url('fonts/alexbrush-regular-otf-webfont.ttf') format('truetype'),
+         url('fonts/alexbrush-regular-otf-webfont.svg#alex_brushregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia_prolight';
+    src: url('fonts/sofiaprolight-webfont.eot');
+    src: url('fonts/sofiaprolight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sofiaprolight-webfont.woff') format('woff'),
+         url('fonts/sofiaprolight-webfont.ttf') format('truetype'),
+         url('fonts/sofiaprolight-webfont.svg#sofia_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*-------------------------------------------------------------------------------------------*/
+/*- SETUP STD CLASSES -----------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+body{font-family: 'sofia_prolight';font-size: 14px;}
+
+h1{margin: 0px; padding: 1px 0px 10px 0px;font-family: 'Bitter', serif;}
+h2{margin: 0px; padding: 1px 0px 10px 0px;font-family: 'Bitter', serif;}
+h3{margin: 0px; padding: 1px 0px 10px 0px;font-family: 'Bitter', serif;}
+h4{margin: 0px; padding: 1px 0px 10px 0px;font-family: 'Bitter', serif;}
+h5{margin: 0px; padding: 1px 0px 10px 0px;font-family: 'Bitter', serif;}
+h6{margin: 0px; padding: 1px 0px 10px 0px;font-family: 'Bitter', serif;}
+
+p{line-height: 20px; margin: 0px 0px 15px;}
+blockquote, blockquote p{line-height: 24px; margin: 0px 0px 15px;}
+
+strong{color:#000;font-weight: bold;text-shadow: none;}
+
+a img { border:0; outline: none; overflow:hidden; }
+
+.aligncenter { margin: 0 auto 10px auto; display:block; clear:both; overflow:hidden; }
+.alignleft { float:left; display:inline; margin:10px 15px 10px 0; overflow:hidden; }
+.alignright { float:right; display:inline; margin:10px 0 10px 15px; overflow:hidden; }
+.frame { background:#fff; padding:5px; }
+.no-margin { margin:0 !important; }
+
+.hidden {visibility: hidden;}
+.clearfix{clear: both; height: 0; max-height: 0;}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- GLOBAL CLASSES --------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*--- Links ---*/
+a{text-decoration: none; color:#62445A}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- GENERAL LAYOUT --------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#wrapper{position: relative;}
+#header{height: 180px;overflow: hidden;}
+#nav{line-height: 36px;}
+#main{}
+#content{float:left; width: 605px;}
+
+#sidebar{float:left;width:303px;}
+footer{height: 150px; clear:both;}
+.inner{width:960px;margin:0 auto;}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*- HEADER ----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#header {background: url("images/bg-header.jpg") repeat-x top center;}
+#logo h1{float:left;width: 241px; height: 95px; margin:20px 0;background: url("images/logoMusicaJarocha.png") no-repeat top left;}
+#logo h1 a{display: block; width: 201px; height: 90px;}
+#descr{float:right;margin-top: 60px;font-family: 'alex_brushregular'; font-size: 2.5em;color:#8C547E;text-shadow: 1px 1px 1px #FFF;
+transform: rotate(-15deg);
+-ms-transform: rotate(-15deg); /* IE 9 */
+-webkit-transform: rotate(-15deg); /* Safari and Chrome */}
+/*-------------------------------------------------------------------------------------------*/
+/*- NAV -------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#nav {position: relative;font-size: 1.2em;background: url("images/bg-nav.png") repeat-x bottom left;border-top:1px solid #fff;}
+#nav ul li{float:left;padding: 0 8px;}
+#nav ul li a{color:#fff;}
+
+/*deroulante*/
+#nav ul li ul {display: none;position: absolute;z-index:100;line-height: 25px;font-size:.9em;background: #333;border-left:1px solid #ccc;border-right: 1px solid #ccc; }
+#nav ul li ul li{padding: 2px 5px;border-bottom: 1px solid #ccc;}
+#nav ul li:hover ul{display: block;}
+#nav li:hover ul li {float: none;}
+#nav li:hover ul li a:hover{color: #62445A;}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- BREADCRUMB ------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#breadcrum{display: block;margin-bottom: 10px;padding: 5px 0 5px 0;font-size: .9em;background: #333;color:#666;
+border-radius:0 5px 5px 0;-webkit-border-radius:0 5px 5px 0;;-o-border-radius:0 5px 5px 0;}
+#breadcrum a{color:#fff;}
+span #breadh{padding:2px 25px 3px 20px;background: #333 url("images/bgBreadcrumb.png") no-repeat top right;}
+span+span a{padding:2px 0 3px 0;}
+/*-------------------------------------------------------------------------------------------*/
+/*- CONTENT ----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#main {background: url("images/bg-main.jpg") repeat-x top center;}
+#main .inner{padding-top:10px;}
+#content{margin: 0 10px 20px 0;padding:20px;background: #FFF;border: 1px solid #ccc;}
+#content_archive {margin: 0 10px 20px 0;padding:20px;background: #FFF;border: 1px solid #ccc;}
+/*-------------------------------------------------------------------------------------------*/
+/*- SIDEBAR ------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#sidebar{margin-bottom: 100px;}
+#sidebar li.widget{margin-bottom:10px; padding:20px; background: #FFF;border: 1px solid #ccc;}
+#sidebar h2{margin-bottom: 5px;padding: 5px 0px 5px 10px;;font-size: 1.2em;font-weight: bold; color:#fff;background: url("images/bg-nav.png") repeat-x bottom left;}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- FOOTER ----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#footer {height: 108px;font-size: .8em;background: url("images/bg-footer.jpg") repeat-x top center;}
+#footer .inner{position: relative;height: 108px;}
+#footer p{margin: 0;}
+#footer a{color:#62445A;}
+#footer a:hover{color:#333;}
+.imagenJarochos{position: absolute; bottom: 15px; right: 20px; width:280px; height:190px;background: url("images/siluetaJarochos.png") no-repeat top left;}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- POSTS    --------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.post .post_content a {font-size: 1.3em;line-height: 1.3em; font-weight: bold;}
+.post h2, .page h2{font-size: 2em;}
+.post h2 a{color:#000;}
+.post .post_content h2 a, .page .post_content h2 a{color:#000; font-size: 1em;font-weight: normal; line-height: 1em;}
+.post .postmetadata .fecha{padding: 0 5px;background: #62445A; color:#FFF;}
+.post .postmetadata a[rel="category tag"]{padding: 0 5px;background: #cc3300; color:#FFF; font-weight: normal; font-size: 1em;}
+.post .post_content p{text-align: justify;}
+.post .post_content h3{margin: 20px 0 10px 0;font-size: 1.5em; border-bottom: 1px solid #000;}
+.post .post_content h3 a{font-weight: normal;}
+#content_archive .post img{float:left;margin-right:10px;}
+.post{margin-bottom: 20px;border-bottom: 1px solid #ccc;}
+
+.prevNext{color: #fff;}
+a[rel="prev"], a[rel="next"]{padding: 5px; font-size: .9em;color:#fff; background: #333;}
+a[rel="prev"]{float: left; border-radius: 5px 0 0 5px;-webkit-border-radius: 5px 0 0 5px;-o-border-radius: 5px 0 0 5px;}
+a[rel="next"]{float: right; border-radius: 0 5px 5px 0;-webkit-border-radius: 0 5px 5px 0;-o-border-radius: 0 5px 5px 0;}
+
+.todas{color: #333; font-weight: bold;}
+.todas:hover{color:#000;}
+
+.category-al-son .fecha, .category-artistas .fecha, .category-sonjarocho .fecha, .category-arpa-latinoamericana .fecha, .category-galerias .fecha,
+.category-documentos .fecha, .category-musica .fecha {display: none;}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- ARCHIVES --------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#content_archive {float:left; width: 605px;}
+#content_archive h2{margin-bottom: 10px;font-size: 2em; border-bottom: 1px solid #000;}
+.home_post .post_content, #content_archive .post_content{float:right;width:400px}
+
+#content_archive .category-documentos .post_content{width:100%;}
+.descargar{float: left;}
+
+/*Paginaci�n*/
+.page-numbers{color:#333;}
+.current{padding: 0 5px; color: #fff;background: #333;}
+/*-------------------------------------------------------------------------------------------*/
+/*- ARCHIVES ARTISTAS--------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#content_archive .category-son-jarocho, #content_archive .category-arpa-latinoamericana{float:left;}
+#content_archive .category-son-jarocho h2, #content_archive .category-arpa-latinoamericana h2{display:table-cell;vertical-align:middle;width: 180px; height:55px;text-align: center;border:none;}
+#content_archive .category-son-jarocho h2 , #content_archive .category-arpa-latinoamericana h2 {font-size: 1.3em;color:#000;}
+
+#content_archive .post .postmetadata{margin-top:5px;}
+/*-------------------------------------------------------------------------------------------*/
+/*- HOME ------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#mainHome{display: block;width: 100%; height: 100%; background: url("images/bg-main.jpg") repeat-x top center;}
+#mainHome .inner{padding: 10px 0 ;}
+#mainHome #content {margin-top: 10px;}
+#mainHome #sidebar{margin-top: 10px;}
+
+.subtitulo{margin-bottom: 20px;font-size: 2em; color:#333;border-bottom:1px solid #333; }
+
+/*-------------------------------------------------------------------------------------------*/
+/*- POSTS HOME ARCHIVES ---------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.home_post{margin-bottom: 20px;border-bottom: 1px solid #ccc;}
+.home_post h2{display: block;}
+.home_post .postmetadata{font-size: .9em;}
+
+
+
+.leer{float:right;margin: 20px 0 5px 0;padding:5px;color:#fff;background:#333; border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;}
+.leer:hover{color: #000;}
+/*-------------------------------------------------------------------------------------------*/
+/*- GALLERY ----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.gallery{margin-bottom: 10px;}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- POP UP AUDIO Template ----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+#wrapperPopup{position: relative;}
+#wrapperPopup #header {height:130px;background: url("images/bg-header.jpg") repeat-x 0 -35px;}
+#wrapperPopup #content {width: 400px;}
+/*-------------------------------------------------------------------------------------------*/
+/*- FORMS ----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+.page input, .page textarea {margin-top: 5px; background:#FFFFFF;border: 2px solid #62445A;border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(204, 204, 204, 0.95) inset;padding: 10px;}
+input.wpcf7-submit {background:#222222; border: medium none; border-radius: 3px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: #EEEEEE;cursor: pointer;font-size: 15px;margin: 10px 0;padding: 5px 42px 5px 22px;
+        position: relative;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);}
+/* Search*/
+/*.search-form {position: relative; right: -160px;}*/
+.search-field{border-radius: 5px;padding: 3px;border:none; color:#333;}
+.search-submit{padding:5px 8px; color: #fff; background: #333; border:none; border-radius: 5px;cursor: pointer;}
+
+/*-------------------------------------------------------------------------------------------*/
+/*- SOME STANDARD WORDPRESS PLUGIN/WIDGET STYLES --------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+        /*--------------------------------------------*/
+	/*- RECENT POSTS SLIDER ------------------------------*/
+        #rps .window{border: 2px solid #62445A; font-family: 'sofia_prolight'; color: #fff;}
+	#rps .window .slider .post-title a span{margin-top: 10px;font-family: 'Bitter', serif;font-size: 1.8em; color:#000;}
+	#rps .window .slider .post-title a span:hover{overflow: visible;}
+	#rps .window .slider {background:url("images/bg-slider.png") repeat top left;}
+	#rps .window .slider .col{border-left: 1px solid #62445A;border-right: 1px solid #62445A;}
+	#rps .window .slider .col .slider-content-both {text-align: justify;}
+	.slider-content-both a:last-child{display:inline-block;width:80px;padding:5px;color:#FFF;background:#333;border-radius:3px;text-align:center;}
+	/*---------------------------------------------*/
+	/* TEXT WIDGET --------------------------------*/
+	#text-4{padding:0;}
+	
+	/*---------------------------------------------*/
+	/* RADIO PLAYER -------------------------------*/
+       #dbPlayer_1{margin-left: 5px;}
+.btnRadio {
+	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+	background-color:#c62d1f;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #d02718;
+	display:block;
+	width:50%;
+	margin:15px auto;
+	padding:1em 5px;
+	cursor:pointer;
+	font-family: 'Bitter', serif;
+	font-size:1.5em;
+	color:#ffffff;
+	text-align: center;
+	text-shadow:0px 1px 0px #810e05;
+}
+.btnRadio:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24437;
+}
+.btnRadio:active {
+	position:relative;
+	top:1px;
+}
